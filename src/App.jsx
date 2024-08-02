@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import Header from './components/Header';
+import About from './components/About';
+
 
 function App() {
 
@@ -9,6 +11,7 @@ function App() {
       <header id="header">
         <Header />
       </header>
+      <About />
     </>
   )
 }
