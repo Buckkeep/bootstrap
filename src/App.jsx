@@ -4,6 +4,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Services from './components/Services';
 import AppHero from './components/Hero';
+import Works from './components/Works';
 
 
 function App() {
@@ -13,9 +14,12 @@ function App() {
       <header id="header">
         <Header />
       </header>
-      <AppHero />
-      <About />
-      <Services />
+      <main>
+        <AppHero />
+        <About />
+        <Services />
+        <Works />
+      </main>
     </>
   )
 }

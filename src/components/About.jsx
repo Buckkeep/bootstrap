@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
-import img1 from "../assets/images/img1.jpg";
+// import img1 from '../assets/images.img1'
 
 export default function About() {
     const html = 80;
@@ -21,7 +21,7 @@ export default function About() {
         </div>
         <Row>
           <Col sm={6}>
-            <Image src={img1} />
+            <Image src="https://picsum.photos/400/500" />
           </Col>
           <Col sm={6}>
             <p>
