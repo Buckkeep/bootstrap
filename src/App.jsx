@@ -5,6 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import AppHero from './components/Hero';
 import Works from './components/Works';
+import Teams from './components/Teams';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <About />
         <Services />
         <Works />
+        <Teams />
       </main>
     </>
   )
