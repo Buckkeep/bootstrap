@@ -57,7 +57,7 @@ function Pricing() {
         <Row>
           {pricingData.map((pricing) => {
             return (
-              <Col sm={4}>
+              <Col sm={4} key={pricing.id}>
                 <div className="heading">
                   <h3>{pricing.plan}</h3>
                   <span className="price">{pricing.price}</span>
