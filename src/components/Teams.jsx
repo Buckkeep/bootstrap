@@ -101,57 +101,34 @@ function Teams() {
       <Container fluid>
         <div className="title-holder">
           <h2>Our teams</h2>
-          <div className="subtitle">Some of our experts</div>
+          <div className="subtitle">some of our experts</div>
         </div>
         <Row>
-          {teamsData.map((teams) => {
-            return (
-              <Col sm={3}ket={teams.id}>
-                <div className="image">
-                  <Image src={teams.image} alt="image"/>
-                  <div className="overlay">
-                    <div className="socials">
-                    <ul>
+          {
+            teamsData.map(teams => {
+              return (
+                <Col sm={3} key={teams.id}>
+                  <div className='image'>
+                    <Image src={teams.image} />
+                    <div className='overlay'>
+                      <div className='socials'>
+                        <ul>
                           <li><a href={teams.fbLink}><i className="fab fa-facebook-f"></i></a></li>
                           <li><a href={teams.twitterLink}><i className="fab fa-twitter"></i></a></li>
                           <li><a href={teams.linkedinLink}><i className="fab fa-linkedin-in"></i></a></li>
                         </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="content">
-                  <h3>{teams.name}</h3>
-                  <span className="designation">{teams.designation}</span>
-                  <p>{teams.description}</p>
-                </div>
-              </Col>
-            );
-          })}
-          <Col sm={3}>
-            1 of 1
-            <div className="image">
-              image
-              <div className="overlay">
-                <div className="socials">
-                  <ul>
-                    <li>
-                      <a href="#"></a>FB Icon
-                    </li>
-                    <li>
-                      <a href="#"></a>Twitter Icon
-                    </li>
-                    <li>
-                      <a href="#"></a>LinkedIn icon
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="content">
-              <h3>Name</h3>
-              <span className="designation">Designation</span>
-            </div>
-          </Col>
+                  <div className='content'>
+                    <h3>{teams.name}</h3>
+                    <span className='designation'>{teams.designation}</span>
+                    <p>{teams.description}</p>
+                  </div>
+                </Col>
+              );
+            })
+          }
         </Row>
       </Container>
     </section>
