@@ -8,7 +8,7 @@ import Works from './components/Works';
 import Teams from './components/Teams';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
-
+import Blog from './components/Blog';
 
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
         <Teams />
         <Testimonials />
         <Pricing />
+        <Blog />
       </main>
     </>
   )
