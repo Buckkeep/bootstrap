@@ -7,6 +7,8 @@ import AppHero from './components/Hero';
 import Works from './components/Works';
 import Teams from './components/Teams';
 import Testimonials from './components/Testimonials';
+import Pricing from './components/Pricing';
+
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
         <Works />
         <Teams />
         <Testimonials />
+        <Pricing />
       </main>
     </>
   )
